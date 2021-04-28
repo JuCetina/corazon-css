@@ -1,0 +1,42 @@
+.corazon{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    top: 20rem;
+    left: 20rem;
+    animation: beating 2s ease infinite;
+}
+
+.corazon:before, .corazon:after{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.corazon:after{
+    background-color: red;
+}
+
+.corazon:before {
+    left: -50px;
+}
+  
+.corazon:after {
+  top: -50px;
+}
+
+@keyframes beating {
+  0% {
+      transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+      transform: rotate(45deg) scale(1);
+  }
+}
