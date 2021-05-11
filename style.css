@@ -17,16 +17,12 @@
     position: absolute;
 }
 
-.corazon:after{
-    background-color: red;
-}
-
 .corazon:before {
     left: -50px;
 }
   
 .corazon:after {
-  top: -50px;
+    top: -50px;
 }
 
 @keyframes beating {
